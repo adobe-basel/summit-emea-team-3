@@ -14,7 +14,7 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: #fff;
+  --background-color: #f5f5f5;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
   --text-color: #000;
@@ -240,4 +240,136 @@ main .section {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+}
+
+main .section.explore .default-content-wrapper {
+  background-color: #fff;
+  position: relative;
+  padding: 30px 20px 0 30px;
+}
+
+@media (min-width: 900px) {
+  main .section.explore .default-content-wrapper {
+    max-width: 1150px;
+  }
+}
+
+
+main .section.explore .default-content-wrapper * {
+  color: #000;
+}
+
+main .section.explore .default-content-wrapper p:nth-child(1) {
+  margin: 0;
+  position: relative;
+}
+
+main .section.explore .default-content-wrapper p:nth-child(1)::before{
+  position: absolute;
+  top: -40px;
+  bottom: 10px;
+  right: -30px;
+  width: 10px;
+  background-color: #ce0d00;
+  content: ' ';
+}
+
+main .section.explore .default-content-wrapper p:nth-child(1) picture::before{
+  content: " ";
+  position: absolute;
+  bottom: -224px;
+  left: -60px;
+  height: 235px;
+  width: 60px;
+  background-image: url(https://summit-emea.adobe.com/_assets/images/home/skills-accent.png);
+  background-size: cover;
+}
+
+main .section.explore .default-content-wrapper p:nth-child(1)::after{
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  left: 50%;
+  height: 10px;
+  background-color: #ce0d00;
+  content: ' ';
+}
+
+
+main .section.explore .default-content-wrapper::after{
+  content: "";
+  position: absolute;
+  bottom: -52px;
+  right: -64px;
+  height: 449px;
+  width: 388px;
+  background-image: url(https://summit-emea.adobe.com/assets/53152527178db29ded43.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+}
+
+main .section.explore .default-content-wrapper h2{
+  font-size: 28px;
+  text-align: center;
+  margin-top: 36px;
+}
+
+main .section.explore .default-content-wrapper p:nth-child(2),
+main .section.explore .default-content-wrapper p:nth-child(3),
+main .section.explore .default-content-wrapper p:nth-child(4){
+  text-align: center;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+main .section.explore .default-content-wrapper ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 40px;
+  text-align: left;
+  margin-bottom: 0;
+  padding: 0 135px;
+}
+
+main .section.explore .default-content-wrapper ul li{
+  position: relative;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-left: 22px;
+  color: #2c2c2c;
+  break-inside: avoid;
+}
+
+main .section.explore .default-content-wrapper ul li::before{
+  content: "\2022"; 
+  color: red;
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em;
+}
+
+main .section.explore .default-content-wrapper > *:last-child{
+  padding-bottom: 72px;
+}
+
+@media (min-width: 900px) {
+  main .section.explore .default-content-wrapper p:nth-child(2),
+  main .section.explore .default-content-wrapper p:nth-child(3),
+  main .section.explore .default-content-wrapper p:nth-child(4){
+      max-width: 775px;
+      margin: 0px auto 32px auto;
+  }
+
+  main .section.explore .default-content-wrapper ul {
+    columns: 3;
+    column-gap: 73px;
+  }
+
+
 }
