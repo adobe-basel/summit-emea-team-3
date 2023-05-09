@@ -237,6 +237,26 @@ main .section {
   }
 }
 
+
+main .section.sponsors {
+  background-color: #f5f5f5;
+}
+
+main .section.sponsors ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+main .section.sponsors img {
+  height: 75px;
+  width: 150px;
+}
+
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
@@ -404,5 +424,4 @@ main .section.explore .default-content-wrapper > *:last-child{
     columns: 3;
     column-gap: 73px;
   }
-
 }
