@@ -353,7 +353,7 @@ main .section.explore .default-content-wrapper::after{
   right: -64px;
   height: 449px;
   width: 388px;
-  background-image: url("https://summit-emea.adobe.com/assets/53152527178db29ded43.png");
+  background-image: url("../../images/explore-bg.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom right;
