@@ -311,17 +311,27 @@ main .section.explore .default-content-wrapper p:nth-child(1) picture::before{
   left: -60px;
   width: 20px;
   height: 76px;
-  background-image: url("https://summit-emea.adobe.com/_assets/images/home/skills-accent-mobile.png");
-  background-size: cover;
+  background: #0E4FD3;
+  background: linear-gradient(180deg, #0E4FD3, #3482DA);
 }
 
 @media (min-width: 900px) {
   main .section.explore .default-content-wrapper p:nth-child(1) picture::before{
     bottom: -224px;
+    left: -7px;
+    height: 235px;
+    width: 8px;
+  }
+
+  main .section.explore .default-content-wrapper p:nth-child(1) picture::after{
+    content: " ";
+    position: absolute;
+    background: #80BC15;
+    background: linear-gradient(180deg, #138735, #80BC15);
+    bottom: -224px;
     left: -60px;
     height: 235px;
-    width: 60px;
-    background-image: url("https://summit-emea.adobe.com/_assets/images/home/skills-accent.png");
+    width: 53px;
   }
 }
 
@@ -347,6 +357,7 @@ main .section.explore .default-content-wrapper::after{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom right;
+  
 }
 
 main .section.explore .default-content-wrapper h2{
