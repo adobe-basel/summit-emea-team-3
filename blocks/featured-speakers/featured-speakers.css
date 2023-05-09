@@ -43,13 +43,13 @@
         height: unset;
     }
 
-    .featured-speakers > div > div:nth-child(2) {
-        padding: 19px 30px 19px 12px;
-    }
-
     .featured-speakers > div:nth-child(5),
     .featured-speakers > div:nth-child(6) {
         display: none;
+    }
+
+    .featured-speakers > div > div:nth-child(2) {
+        padding: 19px 30px 19px 12px;
     }
 }
 
