@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-.hero-home {
-    display:block;
-}
-=======
 video {
     object-fit: contain;
     overflow-clip-margin: content-box;
     overflow: clip;
-}
-
-.hero-home-container > div {
-    max-width: unset;
+    height: 100%;
 }
 
 .hero-home-container {
@@ -19,9 +11,9 @@ video {
 }
 
 .hero-home {
-    position: relative;
     padding: 32px;
     min-height: 300px;
+    color: #fff;
 }
 
 .hero-home h1 {
@@ -58,6 +50,26 @@ video {
         height: 585px;
         overflow: hidden;
     }
+
+    .hero-home > div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero-home > div:nth-child(3) div {
+        max-width: 485px;
+        padding-top: 96px;
+    }
+
+    .hero-home .hero-desktop {
+        position: absolute;
+        left: 45%;
+        top: 0;
+        bottom: 0;
+        right: auto;
+        height: 585px;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 899px) {
@@ -65,4 +77,3 @@ video {
         display: none;
     }
 }
->>>>>>> 66ecc82 (Use img or video depending on size)
