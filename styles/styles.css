@@ -271,22 +271,35 @@ main .section.explore {
 main .section.explore .default-content-wrapper {
   background-color: #fff;
   position: relative;
-  padding: 30px 20px 0 30px;
+  padding: 0;
   margin-left: 30px;
   margin-right: 30px;
 }
 
+
 @media (min-width: 900px) {
   main .section.explore .default-content-wrapper {
+    padding: 30px 20px 0 30px;
     max-width: 1150px;
     margin-right: auto;
     margin-left: auto;
   }
 }
 
-
 main .section.explore .default-content-wrapper * {
   color: #000;
+}
+
+main .section.explore .default-content-wrapper > *{
+  margin: 0 24px
+}
+
+main .section.explore .default-content-wrapper > *:nth-child(2){
+  margin: 48px 0 0;
+}
+
+main .section.explore .default-content-wrapper > *:last-child{
+  margin: 0 0 48px;
 }
 
 main .section.explore .default-content-wrapper p:nth-child(1) {
@@ -296,19 +309,27 @@ main .section.explore .default-content-wrapper p:nth-child(1) {
 
 main .section.explore .default-content-wrapper p:nth-child(1)::before{
   position: absolute;
-  top: -40px;
+  top: -10px;
   bottom: 10px;
-  right: -30px;
+  right: -10px;
   width: 10px;
   background-color: #ce0d00;
   content: ' ';
+}
+
+@media (min-width: 900px) {
+  main .section.explore .default-content-wrapper p:nth-child(1)::before{
+    top: -40px;
+    bottom: 10px;
+    right: -30px;
+  }
 }
 
 main .section.explore .default-content-wrapper p:nth-child(1) picture::before{
   content: " ";
   position: absolute;
   bottom: -66px;
-  left: -60px;
+  left: -30px;
   width: 20px;
   height: 76px;
   background: #0E4FD3;
@@ -337,12 +358,22 @@ main .section.explore .default-content-wrapper p:nth-child(1) picture::before{
 
 main .section.explore .default-content-wrapper p:nth-child(1)::after{
   position: absolute;
-  top: -40px;
-  right: -20px;
+  top: -10px;
+  right: -10px;
   left: 50%;
   height: 10px;
   background-color: #ce0d00;
   content: ' ';
+}
+
+@media (min-width: 900px) {
+  main .section.explore .default-content-wrapper p:nth-child(1)::after{
+    top: -40px;
+    right: -20px;
+    left: 50%;
+    height: 10px;
+  }
+  
 }
 
 
