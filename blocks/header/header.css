@@ -245,6 +245,11 @@ header nav .nav-sections ul > li > ul > li {
     text-decoration: none;
   }
 
+  .nav-drop > ul > li > a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+
   header nav .nav-sections >ul > li > a:any-link {
     box-sizing: border-box;
     padding-top:22px;
@@ -278,11 +283,6 @@ header nav .nav-sections ul > li > ul > li {
     padding: 8px 30px;
     color: #2c2c2c;
     font-size: 14px;
-  }
-
-  .nav-drop > ul > li > a:hover {
-    text-decoration: underline;
-    font-weight: 700;
   }
 }
 
