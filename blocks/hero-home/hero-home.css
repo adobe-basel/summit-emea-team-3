@@ -30,11 +30,8 @@ main .hero-home-container {
     font-size: 44px;
     font-weight: 700;
     line-height: 55px;
-    margin-bottom: 10px;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 62px;
+    margin: 62px auto 10px auto;
     color: white;
 }
 
