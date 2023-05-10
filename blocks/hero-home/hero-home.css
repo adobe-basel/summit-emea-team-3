@@ -1,0 +1,78 @@
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: 100%;
+}
+
+.hero-home-container {
+    padding-top: 0;
+    background-color: #000;
+}
+
+.hero-home {
+    padding: 0 32px 32px;
+    min-height: 300px;
+    color: #fff;
+}
+
+.hero-home h1 {
+    display: none;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.hero-home h2 {
+    font-family: adobe-clean,sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 55px;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+@media (min-width: 900px) {
+    .hero-home .hero-mobile {
+        display: none;
+    }
+
+    .hero-home .hero-desktop {
+        position: absolute;
+        left: 45%;
+        top: 0;
+        bottom: 0;
+        right: auto;
+        height: 585px;
+        overflow: hidden;
+    }
+
+    .hero-home > div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero-home > div:nth-child(3) div {
+        max-width: 485px;
+    }
+
+    .hero-home > .hero-desktop {
+        position: absolute;
+        left: 45%;
+        top: 0;
+        bottom: 0;
+        right: auto;
+        height: 585px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 899px) {
+    .hero-home .hero-desktop {
+        display: none;
+    }
+}
