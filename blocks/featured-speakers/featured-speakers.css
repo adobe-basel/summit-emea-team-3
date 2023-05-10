@@ -33,6 +33,14 @@
     margin: 0;
 }
 
+.featured-speakers-container .default-content-wrapper p {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+
 @media (max-width: 900px) {
     .featured-speakers > div {
         display: flex;
@@ -75,7 +83,7 @@
         display: flex;
         grid-column: 3 / 5;
         padding: 0;
-        margin-left: -30px;
+        margin-left: -20px;
     }
 
     .featured-speakers > div:nth-child(5) picture {
