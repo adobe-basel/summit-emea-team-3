@@ -548,8 +548,6 @@ main .section.quote .default-content-wrapper > *:first-child::before{
   background: linear-gradient(180deg, #138735, #80BC15);
 }
 
-
-
 main .section.quote .default-content-wrapper > *:nth-child(2) {
   margin-top: 48px;
 }
@@ -559,13 +557,28 @@ main .section.quote .default-content-wrapper > *:last-child{
 }
 
 @media (min-width: 900px) {
+  main .section.quote{
+    padding: 55px 32px;
+  }
+
+  main .section.quote .default-content-wrapper > * {
+    width: 50%;
+  }
+  
+  main .section.quote .default-content-wrapper > *:first-child {
+    position: absolute;
+    right: calc(50% - 600px);
+    top: 0;
+    margin: 0;
+    width: unset;
+    object-fit: cover;
+    z-index: -1;
+    left: auto;
+  }
+
   main .section.quote .default-content-wrapper > *:first-child::after,
   main .section.quote .default-content-wrapper > *:first-child::before{
     display: none;
-  }
-
-  main .section.quote .default-content-wrapper > *:first-child {
-    left: auto;
   }
 
   main .section.quote .default-content-wrapper > *:first-child img {
@@ -599,23 +612,5 @@ main .section.quote .default-content-wrapper > *:last-child{
     right: calc(50% - 670px);
     width: 70px;
     background: linear-gradient(180deg, #138735, #80BC15);
-  }
-
-  main .section.quote{
-    padding: 55px 32px;
-  }
-
-  main .section.quote .default-content-wrapper > * {
-    width: 50%;
-  }
-  
-  main .section.quote .default-content-wrapper > *:first-child {
-    position: absolute;
-    right: calc(50% - 600px);
-    top: 0;
-    margin: 0;
-    width: unset;
-    object-fit: cover;
-    z-index: -1;
   }
 }
