@@ -124,7 +124,7 @@ export default async function decorate(block) {
     }
 
     const btn = document.createElement('button');
-    btn.classList.add('secondary', 'animated');
+    btn.classList.add('secondary');
     btn.innerText = '2nd';
 
     // const rad = document.createElement('input')

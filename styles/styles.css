@@ -19,7 +19,7 @@
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
   --link-hover-light-color: 19, 111, 246;
-  --link-hover-seondary-color: 0, 0, 0;
+  --link-secondary-color: 0, 0, 0;
   --background-color: #fff;
   --overlay-background-color: #eee;
   --highlight-background-color: #ccc;
@@ -174,21 +174,13 @@ button:disabled, button:disabled:hover {
 }
 
 a.button.secondary, button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
+  background-color: var(--background-color);
+  border: 2px solid rgba(var(--link-secondary-color), 1);
   color: var(--text-color)
 }
 
 a.button.secondary:hover, button.secondary:hover {
-  background-color: rgba(var(--link-hover-seondary-color), 0.4);
-  border: 2px solid currentcolor;
-  color: var(--text-color)
-}
-
-button.animated, a.button.animated {
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.3s ;
-  transition-property: all;
+  background-color: rgba(var(--link-secondary-color), 0.4);
 }
 
 main input {
