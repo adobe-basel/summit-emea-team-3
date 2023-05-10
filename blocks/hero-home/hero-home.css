@@ -6,12 +6,12 @@ video {
 }
 
 .hero-home-container {
-    padding: 0;
+    padding-top: 0px;
     background-color: #000;
 }
 
 .hero-home {
-    padding: 32px;
+    padding: 0 32px 32px;
     min-height: 300px;
     color: #fff;
 }
@@ -58,7 +58,6 @@ video {
 
     .hero-home > div:nth-child(3) div {
         max-width: 485px;
-        padding-top: 96px;
     }
 
     .hero-home .hero-desktop {
