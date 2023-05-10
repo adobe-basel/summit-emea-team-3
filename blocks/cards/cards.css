@@ -2,9 +2,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  /*display: flex;*/
-  /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
-  /*grid-gap: 16px;*/
+  display: flex;
 }
 
 @media (min-width: 1024px) {
@@ -78,7 +76,6 @@
 }
 
 .cards > ul > li {
-  /*border: 0px solid var(--highlight-background-color);*/
   background-color: var(--background-color)
 }
 
