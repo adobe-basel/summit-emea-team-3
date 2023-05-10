@@ -297,6 +297,11 @@ main .section.explore .default-content-wrapper {
   }
 }
 
+main .section.quote .default-content-wrapper > * {
+  color: #FFF;
+  margin: 0 30px;
+}
+
 main .section.explore .default-content-wrapper * {
   color: #000;
 }
@@ -478,46 +483,26 @@ main .section.explore .default-content-wrapper ul li::before{
 
 main .section.quote{ 
   position: relative;
+  padding: 0;
 }
-
 
 main .section.quote::after,
 main .section.quote::before{
   content: "";
   position: absolute;
-  top:0;
-  bottom: 0;
-  height: 100%;
   z-index: -1;
 }
 
-main .section.quote::after {
-  left:0;
+main .section.quote::after{
+  top: 100px;
+  bottom:0;
+  width: 100%;
+  height: auto;
+  right: 0;
   background: linear-gradient(to bottom right, #0c50d3, #0c50d3);
-  width: 50%;
   background-position: left bottom,right bottom;
 }
 
-main .section.quote::before {
-  background: linear-gradient(180deg, #138735, #80BC15);
-  width: 10%;
-  
-}
-
-main .section.quote .default-content-wrapper > * {
-  width: 50%;
-  color: #FFF;
-}
-
-main .section.quote .default-content-wrapper > *:first-child {
-  position: absolute;
-  right: calc(50% - 600px);
-  top: 0;
-  margin: 0;
-  width: unset;
-  object-fit: cover;
-  z-index: -1;
-}
 
 main .section.quote .default-content-wrapper > *:nth-child(2)::before,
 main .section.quote .default-content-wrapper > *:nth-child(2)::after{
@@ -529,16 +514,108 @@ main .section.quote .default-content-wrapper > *:nth-child(2)::after{
   z-index: -1;
 }
 
-main .section.quote .default-content-wrapper > *:nth-child(2)::after{
-  right: 0;
-  width: calc(50% - 670px);
-  background: linear-gradient(325deg, #CF0828, #D30380);
+main .section.quote .default-content-wrapper > *:first-child {
+  position: relative;
+  top:0;
+  left:0;
+  right:0;
+  margin: 0;
 }
 
+main .section.quote .default-content-wrapper > *:first-child img {
+  max-width: 80%;
+  width: 80%;
+}
 
-main .section.quote .default-content-wrapper > *:nth-child(2)::before{
-  right: calc(50% - 670px);
-  width: 70px;
+main .section.quote .default-content-wrapper > *:first-child::after,
+main .section.quote .default-content-wrapper > *:first-child::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 10px;
+  
+}
+
+main .section.quote .default-content-wrapper > *:first-child::after{
+  left: calc(80% + 20px);
+  background: linear-gradient(325deg, #CF0828, #D30380);
+  width: 100%;
+}
+
+main .section.quote .default-content-wrapper > *:first-child::before{
+  left: 80%;
+  width: 20px;
   background: linear-gradient(180deg, #138735, #80BC15);
 }
 
+
+
+main .section.quote .default-content-wrapper > *:nth-child(2) {
+  margin-top: 48px;
+}
+
+main .section.quote .default-content-wrapper > *:last-child{
+  padding-bottom: 48px;
+}
+
+@media (min-width: 900px) {
+  main .section.quote .default-content-wrapper > *:first-child::after,
+  main .section.quote .default-content-wrapper > *:first-child::before{
+    display: none;
+  }
+
+  main .section.quote .default-content-wrapper > *:first-child {
+    left: auto;
+  }
+
+  main .section.quote .default-content-wrapper > *:first-child img {
+    width: unset;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  main .section.quote::after {
+    left:0;
+    width: 50%;
+    top:0;
+    bottom: 0;
+    height: 100%;
+  }
+
+  main .section.quote::before{
+    top:0;
+    bottom: 0;
+    height: 100%;
+  }
+
+  main .section.quote .default-content-wrapper > *:nth-child(2)::after{
+    right: 0;
+    width: calc(50% - 670px);
+    background: linear-gradient(325deg, #CF0828, #D30380);
+  }
+  
+  main .section.quote .default-content-wrapper > *:nth-child(2)::before{
+    right: calc(50% - 670px);
+    width: 70px;
+    background: linear-gradient(180deg, #138735, #80BC15);
+  }
+
+  main .section.quote{
+    padding: 55px 32px;
+  }
+
+  main .section.quote .default-content-wrapper > * {
+    width: 50%;
+  }
+  
+  main .section.quote .default-content-wrapper > *:first-child {
+    position: absolute;
+    right: calc(50% - 600px);
+    top: 0;
+    margin: 0;
+    width: unset;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
