@@ -10,10 +10,6 @@
  * governing permissions and limitations under the License.
  */
 
-/* Unique key generated for specific Adobe fonts project
-   This way of importing is mandatory, due to licensing reasons */
-/* @import url("https://use.typekit.net/nrv2wlp.css"); */
-
  :root {
   /* colors */
   --link-color: #035fe6;
