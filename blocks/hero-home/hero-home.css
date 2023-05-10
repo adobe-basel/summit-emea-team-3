@@ -5,15 +5,16 @@ video {
     height: 100%;
 }
 
-.hero-home-container {
+main .hero-home-container {
     padding-top: 0;
     background-color: #000;
 }
 
 .hero-home {
-    padding: 0 32px 32px;
+    padding-top: 71px;
     min-height: 300px;
     color: #fff;
+    position:relative;
 }
 
 .hero-home h1 {
@@ -29,26 +30,52 @@ video {
     font-size: 44px;
     font-weight: 700;
     line-height: 55px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 62px;
     color: white;
 }
 
+.hero-home p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+.hero-home p.button-container {
+    margin-top: 12px;
+}
+
+.hero-home .button-container a {
+    font-size: 16px;
+    padding: 5px 18px;
+}
+
+.hero-home ul {
+    padding: 0;
+    display: flex;
+}
+
+.hero-home ul li {
+    list-style: none;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.hero-home ul li:nth-child(2) {
+    color: red;
+}
+
 @media (min-width: 900px) {
+    main .hero-home-container {
+        padding-bottom: 35px;
+    }
+    
     .hero-home .hero-mobile {
         display: none;
-    }
-
-    .hero-home .hero-desktop {
-        position: absolute;
-        left: 45%;
-        top: 0;
-        bottom: 0;
-        right: auto;
-        height: 585px;
-        overflow: hidden;
     }
 
     .hero-home > div:nth-child(3) {
@@ -57,12 +84,12 @@ video {
     }
 
     .hero-home > div:nth-child(3) div {
-        max-width: 485px;
+        max-width: 400px;
     }
 
     .hero-home > .hero-desktop {
         position: absolute;
-        left: 45%;
+        left: 42.5%;
         top: 0;
         bottom: 0;
         right: auto;
@@ -71,8 +98,28 @@ video {
     }
 }
 
+@media (min-width: 1200px) {
+    .hero-home > div:nth-child(3) div {
+        max-width: 485px;
+    }
+}
+
 @media (max-width: 899px) {
+    main .hero-home-container {
+        padding: 0;
+        margin-bottom: -20px;
+    }
+
+    .hero-home {
+        padding-top: 0;
+    }
+    
     .hero-home .hero-desktop {
         display: none;
+    }
+
+    .hero-home > div:nth-child(3) {
+        padding-right: 30px;
+        padding-left: 30px;
     }
 }
