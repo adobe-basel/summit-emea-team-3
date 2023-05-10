@@ -12,6 +12,6 @@
       "id": "preflight",
       "environments": ["dev", "preview", "live"],
       "event": "preflight"
-    },
+    }
   ]
 }
