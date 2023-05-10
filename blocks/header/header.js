@@ -123,6 +123,18 @@ export default async function decorate(block) {
       });
     }
 
+    const btn = document.createElement('button');
+    btn.classList.add('secondary', 'animated');
+    btn.innerText = '2nd';
+
+    // const rad = document.createElement('input')
+    // rad.type = 'radio';
+    //
+    // rad.classList.add('iradio_square-blue', 'icheck-item');
+    //
+    // nav.prepend(rad);
+    nav.prepend(btn);
+
     // hamburger for mobile
     const hamburger = document.createElement('div');
     hamburger.classList.add('nav-hamburger');
