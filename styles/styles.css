@@ -264,6 +264,7 @@ main .section.highlight {
 
 main .section.explore {
   padding: 0;
+  position: relative;
 }
 
 
@@ -283,6 +284,16 @@ main .section.explore .default-content-wrapper {
     max-width: 1150px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  main .section.explore::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 50%;
+    height: calc(50% + 12px);
+    background-color: #000;
   }
 }
 
@@ -464,3 +475,70 @@ main .section.explore .default-content-wrapper ul li::before{
     column-gap: 73px;
   }
 }
+
+main .section.quote{ 
+  position: relative;
+}
+
+
+main .section.quote::after,
+main .section.quote::before{
+  content: "";
+  position: absolute;
+  top:0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+main .section.quote::after {
+  left:0;
+  background: linear-gradient(to bottom right, #0c50d3, #0c50d3);
+  width: 50%;
+  background-position: left bottom,right bottom;
+}
+
+main .section.quote::before {
+  background: linear-gradient(180deg, #138735, #80BC15);
+  width: 10%;
+  
+}
+
+main .section.quote .default-content-wrapper > * {
+  width: 50%;
+  color: #FFF;
+}
+
+main .section.quote .default-content-wrapper > *:first-child {
+  position: absolute;
+  right: calc(50% - 600px);
+  top: 0;
+  margin: 0;
+  width: unset;
+  object-fit: cover;
+  z-index: -1;
+}
+
+main .section.quote .default-content-wrapper > *:nth-child(2)::before,
+main .section.quote .default-content-wrapper > *:nth-child(2)::after{
+  content: "";
+  position: absolute;
+  top:0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+main .section.quote .default-content-wrapper > *:nth-child(2)::after{
+  right: 0;
+  width: calc(50% - 670px);
+  background: linear-gradient(325deg, #CF0828, #D30380);
+}
+
+
+main .section.quote .default-content-wrapper > *:nth-child(2)::before{
+  right: calc(50% - 670px);
+  width: 70px;
+  background: linear-gradient(180deg, #138735, #80BC15);
+}
+
