@@ -1,5 +1,5 @@
 export default function decorate(block) {
-  const videoLink = block.querySelector("a");
+  const videoLink = block.querySelector('a');
   const videoRef = videoLink.href;
   videoLink.outerHTML = `<video class="home-video-banner" autoplay="" loop="" muted=""><source src="${videoRef}" type="video/mp4"></video>`;
   const mobile = block.children[0].children[1].innerHTML;
