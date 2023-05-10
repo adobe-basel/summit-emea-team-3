@@ -300,6 +300,7 @@ main .section.explore .default-content-wrapper > *:nth-child(2){
 
 main .section.explore .default-content-wrapper > *:last-child{
   margin: 0 0 48px;
+  padding-bottom: 72px;
 }
 
 main .section.explore .default-content-wrapper p:nth-child(1) {
@@ -444,10 +445,6 @@ main .section.explore .default-content-wrapper ul li::before{
   display: inline-block; 
   width: 1em; 
   margin-left: -1em;
-}
-
-main .section.explore .default-content-wrapper > *:last-child{
-  padding-bottom: 72px;
 }
 
 @media (min-width: 900px) {
