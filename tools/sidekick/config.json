@@ -2,11 +2,6 @@
   "project": "Summit EMEA Team 3",
   "plugins": [
     {
-      "id": "foo",
-      "title": "Foo",
-      "url": "/tools/sidekick/foo.html"
-    },
-    {
       "id": "tools",
       "title": "Tools",
       "isContainer": true
