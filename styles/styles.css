@@ -278,8 +278,8 @@ main .section.highlight {
 
 /* iCheck plugin Square skin, blue
 ----------------------------------- */
-.icheckbox_square-blue,
-.iradio_square-blue {
+.icheckbox-square-blue,
+.iradio-square-blue {
   display: inline-block;
   *display: inline;
   vertical-align: middle;
@@ -292,54 +292,54 @@ main .section.highlight {
   cursor: pointer;
 }
 
-.icheckbox_square-blue {
+.icheckbox-square-blue {
   background-position: 0 0;
 }
 
-.icheckbox_square-blue.hover {
+.icheckbox-square-blue.hover {
   background-position: -24px 0;
 }
 
-.icheckbox_square-blue.checked {
+.icheckbox-square-blue.checked {
   background-position: -48px 0;
 }
 
-.icheckbox_square-blue.disabled {
+.icheckbox-square-blue.disabled {
   background-position: -72px 0;
   cursor: default;
 }
 
-.icheckbox_square-blue.checked.disabled {
+.icheckbox-square-blue.checked.disabled {
   background-position: -96px 0;
 }
 
-.iradio_square-blue {
+.iradio-square-blue {
   background-position: -120px 0;
 }
 
-.iradio_square-blue.hover {
+.iradio-square-blue.hover {
   background-position: -144px 0;
 }
 
-.iradio_square-blue.checked {
+.iradio-square-blue.checked {
   background-position: -168px 0;
 }
 
-.iradio_square-blue.disabled {
+.iradio-square-blue.disabled {
   background-position: -192px 0;
   cursor: default;
 }
 
-.iradio_square-blue.checked.disabled {
+.iradio-square-blue.checked.disabled {
   background-position: -216px 0;
 }
 
 /* HiDPI support */
-@media (min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  .icheckbox_square-blue,
-  .iradio_square-blue {
+/* stylelint-disable-next-line */
+@media (minpixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .icheckbox-square-blue,
+  .iradio-square-blue {
     background-image: url("/icons/blue@2x.png");
-    background-size: 240px 24px;
     background-size: 240px 24px;
   }
 }
@@ -437,7 +437,7 @@ main .section.explore .default-content-wrapper::after{
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom right;
-  
+
 }
 
 main .section.explore .default-content-wrapper h2{
@@ -487,11 +487,11 @@ main .section.explore .default-content-wrapper ul li{
 }
 
 main .section.explore .default-content-wrapper ul li::before{
-  content: "\2022"; 
+  content: "\2022";
   color: red;
-  font-weight: bold; 
-  display: inline-block; 
-  width: 1em; 
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
   margin-left: -1em;
 }
 
