@@ -234,6 +234,34 @@ header nav .nav-sections ul > li > ul > li {
     flex: 0 1 auto;
     position: relative;
     font-weight: 500;
+    box-sizing: border-box;
+  }
+
+  header nav li > a {
+    text-decoration: none;
+  }
+
+  header nav li > a:hover {
+    text-decoration: none;
+  }
+
+  .nav-drop > ul > li > a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+
+  header nav .nav-sections >ul > li > a:any-link {
+    box-sizing: border-box;
+    padding-top:22px;
+    padding-bottom: 18px;
+    font-size: 14px;
+    color: #2c2c2c;
+    border-bottom: 3px solid transparent;
+    transition: all .3s ease-in-out;
+  }
+
+  header nav .nav-sections >ul > li:hover > a:any-link {
+    border-bottom: 3px solid #2c2c2c;
   }
 
   header nav .nav-sections > ul > li > ul {
@@ -247,25 +275,14 @@ header nav .nav-sections ul > li > ul > li {
     left: -1em;
     width: 200px;
     margin-top: 12px;
-    padding: 1em;
-    background-color: var(--highlight-background-color);
+    background-color: #fafafa;
     white-space: initial;
   }
 
-  header nav .nav-sections > ul > li > ul::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 8px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--highlight-background-color);
-  }
-
   header nav .nav-sections > ul > li > ul > li {
-    padding: 8px 0;
+    padding: 8px 30px;
+    color: #2c2c2c;
+    font-size: 14px;
   }
 }
 

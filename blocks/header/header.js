@@ -133,7 +133,7 @@ export default async function decorate(block) {
     // rad.classList.add('iradio_square-blue', 'icheck-item');
     //
     // nav.prepend(rad);
-    nav.prepend(btn);
+    // nav.prepend(btn);
 
     // hamburger for mobile
     const hamburger = document.createElement('div');
