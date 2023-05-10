@@ -2,18 +2,81 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 16px;
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .cards.chess > ul {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+
+  .cards.chess > ul > li {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  .cards.chess > ul > li:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .cards-card-body {
+    width: 50%;
+    margin: 0;
+    flex: 0 0 auto;
+    padding-left: 70px;
+    padding-right: 70px;
+    box-sizing: border-box;
+  }
+
+  .cards-card-body > h2 {
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+    line-height: 1.25;
+    max-width: 420px;
+  }
+
+  .cards-card-image {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .cards.chess > ul {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    background: black;
+  }
+
+  .cards.chess > ul > li {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .cards-card-body {
+    padding-top: 1em;
+  }
+}
+
+.cards-card-body > h2 {
+  font-size: 1.75rem;
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+
+.cards-card-body > p {
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 .cards > ul > li {
-  border: 1px solid var(--highlight-background-color);
   background-color: var(--background-color)
-}
-
-.cards .cards-card-body {
-  margin: 16px;
 }
 
 .cards .cards-card-image {
