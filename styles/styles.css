@@ -276,8 +276,12 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
-/* iCheck plugin Square skin, blue
------------------------------------ */
+header nav .nav-drop > a {
+  pointer-events: none;
+}
+
+  /* iCheck plugin Square skin, blue
+  ----------------------------------- */
 .icheckbox-square-blue,
 .iradio-square-blue {
   display: inline-block;
