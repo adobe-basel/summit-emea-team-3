@@ -106,7 +106,15 @@ export default async function decorate(block) {
     const classes = ['brand', 'sections', 'tools'];
     classes.forEach((c, i) => {
       const section = nav.children[i];
-      if (section) section.classList.add(`nav-${c}`);
+      if (section) {
+        section.classList.add(`nav-${c}`);
+        if (c === 'tools') {
+        // eslint-disable-next-line no-restricted-syntax
+          for (const link of section.getElementsByTagName('a')) {
+            link.classList.add('button', 'primary');
+          }
+        }
+      }
     });
 
     const navSections = nav.querySelector('.nav-sections');
