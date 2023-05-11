@@ -289,4 +289,16 @@ header nav .nav-sections ul > li > ul > li {
 /* tools */
 header nav .nav-tools {
   grid-area: tools;
+  font-size: 14px;
+  display: flex;
+}
+
+header nav .nav-tools a.button:any-link {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+header nav .nav-tools p:nth-child(1) {
+  transform: translateY(25%);
+  margin-right: 10px;
 }

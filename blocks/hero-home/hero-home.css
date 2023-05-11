@@ -8,6 +8,7 @@ video {
 main .hero-home-container {
     padding-top: 0;
     background-color: #000;
+    overflow: hidden;
 }
 
 .hero-home {
@@ -31,7 +32,7 @@ main .hero-home-container {
     font-weight: 700;
     line-height: 55px;
     max-width: 1200px;
-    margin: 62px auto 10px auto;
+    margin: 62px auto 10px;
     color: white;
 }
 
