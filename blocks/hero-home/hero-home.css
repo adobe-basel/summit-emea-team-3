@@ -8,6 +8,7 @@ video {
 main .hero-home-container {
     padding-top: 0;
     background-color: #000;
+    overflow: hidden;
 }
 
 .hero-home {
