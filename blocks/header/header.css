@@ -30,6 +30,10 @@ header nav[aria-expanded="true"] {
   min-height: 100vh;
 }
 
+header nav .nav-brand svg {
+  width: 143px;
+}
+
 @media (min-width: 600px) {
   header nav {
     padding: 0 2rem;
