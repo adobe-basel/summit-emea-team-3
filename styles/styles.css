@@ -361,6 +361,17 @@ main .section.explore .default-content-wrapper {
   margin-right: 30px;
 }
 
+main .section.explore .default-content-wrapper p a:any-link {
+  background-color: transparent;
+  border: 2px solid #222;
+  color: #222;
+}
+
+main .section.explore .default-content-wrapper p a:hover {
+  background-color: #d5d5d5;;
+  border: 2px solid #222;
+  color: #222;
+}
 
 @media (min-width: 900px) {
   main .section.explore .default-content-wrapper {
