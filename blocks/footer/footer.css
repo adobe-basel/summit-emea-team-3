@@ -17,6 +17,42 @@ footer * {
   display: flex;
 }
 
+footer .footer {
+  max-width: 1200px;
+  flex-grow: 1; 
+}
+
+footer .footer p {
+  margin: 0;
+}
+
+.footer-wrapper {
+  padding: 100px 0 0;
+}
+
+.footer-half .placeholder {
+  width: 0;
+}
+
+.footer-half > div > div {
+  flex-direction: column;
+}
+
+.footer-half > div > div ul {
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.footer-half h3 {
+  font-weight: 700;
+}
+
+
+.button-secondary {
+  background-color: red;
+}
+
+
 footer .footer-container {
   flex-direction: column;
   flex-grow: 1;
@@ -34,13 +70,17 @@ footer .footer-container > :nth-child(1) {
   }
 }
 
+footer .footer-container > :nth-child(1) > p > a {
+  padding-left: 5px;
+}
+
+footer .footer-container > :nth-child(3) > ul > li > a {
+  color: #2c2c2c;
+}
+
 footer .footer-container > :nth-child(1) .icon-home {
   border-right: 2px solid grey;
   padding-right: 5px;
-}
-
-footer .footer-container > :nth-child(1) > p > a {
-  padding-left: 5px;
 }
 
 footer .footer-container > :nth-child(2) {
@@ -77,7 +117,15 @@ footer .footer-container > :nth-child(2) .footer-half.footer-right > div > div:n
   background-color: #d5d5d5;
 }
 
+
+
 @media screen and (min-width: 991px) {
+  footer .footer-container > :nth-child(2) .footer-half.footer-left > div > div li {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
   footer .footer-container > :nth-child(2) .footer-half > div {
     flex-grow: 1;
     justify-content: space-between;
@@ -103,11 +151,6 @@ footer .footer-container > :nth-child(2) .footer-half.footer-right > div > div:n
     margin-top: 0;
   }
 
-  footer .footer-container > :nth-child(2) .footer-half.footer-left > div > div li {
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: 400;
-  }
 
   footer .footer-container > :nth-child(2) .footer-half.footer-right {
     padding-left: 1rem;
@@ -129,6 +172,14 @@ footer .footer-container > :nth-child(2) .footer-half.footer-right > div > div:n
 }
 
 @media screen and (max-width: 990px) {
+  footer .footer-container > :nth-child(2) .footer-half > div > div > ul, footer .footer-container > :nth-child(2) .footer-half > div > div > p {
+    display: none;
+  }
+
+  footer .footer-container > :nth-child(2) .footer-half > div > div.expanded > ul {
+    display: flex;
+  }
+
   footer .footer-container > :nth-child(2) {
     flex-direction: column-reverse;
   }
@@ -155,14 +206,6 @@ footer .footer-container > :nth-child(2) .footer-half.footer-right > div > div:n
     content: '+';
     position: absolute;
     right: 0;
-  }
-
-  footer .footer-container > :nth-child(2) .footer-half > div > div > ul, footer .footer-container > :nth-child(2) .footer-half > div > div > p {
-    display: none;
-  }
-
-  footer .footer-container > :nth-child(2) .footer-half > div > div.expanded > ul {
-    display: flex;
   }
 
   footer .footer-container > :nth-child(2) .footer-half > div > div.expanded > p {
@@ -196,10 +239,6 @@ footer .footer-container > :nth-child(3) > ul > :not(:last-child)::after {
   padding: 0 10px;
 }
 
-footer .footer-container > :nth-child(3) > ul > li > a {
-  color: #2c2c2c;
-}
-
 footer .footer-container > :nth-child(3) > ul > li > .icon {
   width: 9px;
   height: 10px;
@@ -212,37 +251,3 @@ footer .footer-container > :nth-child(3) > ul > li > .icon {
   }
 }
 
-footer .footer {
-  max-width: 1200px;
-  flex-grow: 1; 
-}
-
-footer .footer p {
-  margin: 0;
-}
-
-.footer-wrapper {
-  padding: 100px 0px 0px;
-}
-
-.footer-half .placeholder {
-  width: 0;
-}
-
-.footer-half > div > div {
-  flex-direction: column;
-}
-
-.footer-half > div > div ul {
-  flex-direction: column;
-  padding-left: 0;
-}
-
-.footer-half h3 {
-  font-weight: 700;
-}
-
-
-.button-secondary {
-  background-color: red;
-}
