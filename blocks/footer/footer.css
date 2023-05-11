@@ -1,15 +1,22 @@
+
 footer {
   padding: 2rem;
   background-color: white;
-  font-size: var(--body-font-size-s);
   display: flex;
   font-family: adobe-clean,sans-serif;
   font-size: 12px;
   justify-content: space-around;
 }
+
+footer .icon {
+  height: 16px;
+  width: unset;
+}
+
 footer * {
   display: flex;
 }
+
 footer .footer-container {
   flex-direction: column;
   flex-grow: 1;
@@ -31,13 +38,16 @@ footer .footer-container > :nth-child(1) .icon-home {
   border-right: 2px solid grey;
   padding-right: 5px;
 }
+
 footer .footer-container > :nth-child(1) > p > a {
   padding-left: 5px;
 }
+
 footer .footer-container > :nth-child(2) {
   background-color: transparent;
   color: #2c2c2c;
 }
+
 footer .footer-container > :nth-child(2) .footer-half > div {
   flex-grow: 1;
   justify-content: space-between;
@@ -72,14 +82,17 @@ footer .footer-container > :nth-child(2) .footer-half.footer-right > div > div:n
     flex-grow: 1;
     justify-content: space-between;
   }
+
   footer .footer-container > :nth-child(2) .footer-half.footer-left {
     padding-right: 1rem;
     border-right: 1px solid #cecece;
     flex-grow: 65;
   }
+
   footer .footer-container > :nth-child(2) .footer-half.footer-left > div :nth-child(2) ul > li > ul {
     flex-direction: row;
   }
+
   footer .footer-container > :nth-child(2) .footer-half.footer-left > div :nth-child(2) ul > li > ul > li {
     padding-right: 15px;
     font-size: 16px;
@@ -95,6 +108,7 @@ footer .footer-container > :nth-child(2) .footer-half.footer-right > div > div:n
     line-height: 24px;
     font-weight: 400;
   }
+
   footer .footer-container > :nth-child(2) .footer-half.footer-right {
     padding-left: 1rem;
     flex-grow: 35;
@@ -108,6 +122,7 @@ footer .footer-container > :nth-child(2) .footer-half.footer-right > div > div:n
     font-size: 16px;
     margin-top: 0;
   }
+
   footer .footer-container > :nth-child(2) .footer-half.footer-right > div > div:last-child > p {
     display: block;
   }
@@ -117,34 +132,43 @@ footer .footer-container > :nth-child(2) .footer-half.footer-right > div > div:n
   footer .footer-container > :nth-child(2) {
     flex-direction: column-reverse;
   }
+
   footer .footer-container > :nth-child(2) .footer-half.footer-left > div > :nth-child(2) ul > li > ul {
     display: none;
   }
+
   footer .footer-container > :nth-child(2) .footer-half > div {
     flex-direction: column;
   }
+
   footer .footer-container > :nth-child(2) .footer-half > div > div {
     position: relative;
     border-bottom: 1px solid dimgrey;
     padding-bottom: 1rem;
   }
+
   footer .footer-container > :nth-child(2) .footer-half > div > div h3 {
     font-size: 18px;
   }
+
   footer .footer-container > :nth-child(2) .footer-half > div > div h3::after {
     content: '+';
     position: absolute;
     right: 0;
   }
+
   footer .footer-container > :nth-child(2) .footer-half > div > div > ul, footer .footer-container > :nth-child(2) .footer-half > div > div > p {
     display: none;
   }
+
   footer .footer-container > :nth-child(2) .footer-half > div > div.expanded > ul {
     display: flex;
   }
+
   footer .footer-container > :nth-child(2) .footer-half > div > div.expanded > p {
     display: block;
   }
+
   footer .footer-container > :nth-child(2) .footer-half > div .placeholder {
     display: none;
   }
@@ -169,7 +193,7 @@ footer .footer-container > :nth-child(3) > ul {
 
 footer .footer-container > :nth-child(3) > ul > :not(:last-child)::after {
   content: '/';
-  padding: 0px 10px;
+  padding: 0 10px;
 }
 
 footer .footer-container > :nth-child(3) > ul > li > a {
@@ -218,10 +242,6 @@ footer .footer p {
   font-weight: 700;
 }
 
-.icon {
-  height: 16px;
-  width: unset;
-}
 
 .button-secondary {
   background-color: red;
