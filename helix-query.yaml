@@ -14,3 +14,16 @@ indices:
       description:
         select: head > meta[name="description"]
         value: attribute(el, "content")
+  docpages:
+    target: /sessions.json
+    include: 
+      - /sessions/**
+    properties:
+      title:
+        select: main h1
+        value: |
+          textContent(el)
+      topics:
+        select: main ul
+        value: |
+          textContent(el)
