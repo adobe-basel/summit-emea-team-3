@@ -14,7 +14,7 @@ indices:
       description:
         select: head > meta[name="description"]
         value: attribute(el, "content")
-  docpages:
+  sessions:
     target: /sessions.json
     include: 
       - /sessions/**
